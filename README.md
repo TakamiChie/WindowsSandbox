@@ -23,3 +23,17 @@ Windows 10 2009で使える基本構成。わたしはWebアプリのスクリ�
 Windows 10 2009 VerのWindowsサンドボックスでは`logoncommand`にコマンドプロンプトを指定すると構成エラーとなって落ちるというバグ(？)があるようなので`run.cmd`を直接起動することができない。
 
 そのためエクスプローラーでスクリプトのあるフォルダを開く。サンドボックス上で`run.cmd`を起動して待つと良い。
+
+### wordpress
+
+* インストール
+  * Chocolaty
+  * 最新版のEdge
+  * XAMPP8.0
+  * WordPress(C:\xampp\htdocs\wordpressにインストールされる)
+* 設定
+  * 時計を日本語表記に変更する
+
+`run.cmd`を実行して初期処理が終わったら、スタートメニューのXAMPPコントロールパネルよりApacheとMySQLを起動、http://127.0.0.1/wordpressを開くとWordPressにいける。
+
+データベースは必要ならphpmyadminで作っておくこと。ユーザー名はroot、パスワードは空でいける。
